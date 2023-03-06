@@ -9,8 +9,7 @@ body{
     background: cyan;
 }
 ::selection{
-    color: #fff;
-    background: cyan;
+    background: beige;
 }
 .start_btn,
 .info_box,
@@ -294,7 +293,7 @@ footer button.show{
 .result_box .score_text span{
     display: flex;
     margin: 10px 0;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
 }
 .result_box .score_text span p{
@@ -332,4 +331,9 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+.nameInput{
+    border: black;
+    border-width: 1px;
+    border-style: dashed;
 }
