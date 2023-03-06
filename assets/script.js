@@ -227,6 +227,7 @@ function startTimer(time) {
           option_list.children[i].setAttribute("class", "option correct");
           option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
           console.log("Time Off: Auto selected correct answer.");
+          showResult(); 
         }
       }
       for (i = 0; i < allOptions; i++) {
@@ -260,4 +261,9 @@ enterNameButton.addEventListener("click", function () {
   console.log(nameInput.value);
   localStorage.setItem("Name", nameInput.value);
   localStorage.setItem("Score", finalScore);
+  localStorage.getItem("Name", nameInput.value);
+  localStorage.setItem("Score", finalScore);
 });
+
+// localStorage.getItem("Name")
+// localStorage.getItem("Score")
